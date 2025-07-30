@@ -35,6 +35,16 @@ Want to track my daily streak? Check out my [LeetCode Profile](https://leetcode.
 
 ---
 
+## 📈 GitHub Activity
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=pradoomvarma&show_icons=true&theme=radical" />
+  <br/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=pradoomvarma&theme=radical" />
+</p>
+
+---
+
 ## 💡 Why This Repo?
 
 - 📌 Consolidates your learning
