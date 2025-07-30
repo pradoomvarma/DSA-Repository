@@ -40,7 +40,7 @@ Want to track my daily streak? Check out my [LeetCode Profile](https://leetcode.
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=pradoomvarma&show_icons=true&theme=radical" />
   <br/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=pradoomvarma&theme=radical" />
+  <img src="https://streak-stats.demolab.com?user=pradoomvarma&theme=radical" />
 </p>
 
 ---
@@ -62,7 +62,6 @@ If you'd like to suggest problems or contribute solutions in different languages
 ## 📬 Contact Me
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/pradoom-varma/)
-//- 💻 [Portfolio](https://your-portfolio.com)
 
 ---
 
