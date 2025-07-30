@@ -3,7 +3,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Language-C++%20%7C%20Python-blue?style=for-the-badge&logo=codewars" />
-  <img src="https://img.shields.io/badge/Problems%20Solved-🔥%20100%2B-orange?style=for-the-badge&logo=leetcode" />
   <img src="https://img.shields.io/badge/Goal-Crack%20the%20Coding%20Interview-brightgreen?style=for-the-badge" />
 </p>
 
