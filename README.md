@@ -3,6 +3,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Language-C++-blue?style=for-the-badge&logo=cplusplus" />
+  <img src="https://img.shields.io/badge/Goal-Become%20Red%20Coder-brightgreen?style=for-the-badge" />
 </p>
 
 ---
