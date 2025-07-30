@@ -27,7 +27,7 @@ Arrays, Strings, Linked Lists, Trees, Graphs, Dynamic Programming, Greedy, Recur
 ## 🗂️ Folder Structure
 
 
-> Each folder contains problems with solutions.
+> Each folder contains problems with solutions (currently).
 - Array
 ---
 
