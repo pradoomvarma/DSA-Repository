@@ -17,7 +17,7 @@ This repository is a curated collection of all the **Data Structures and Algorit
 - [GeeksforGeeks](https://geeksforgeeks.org)
 - [Codeforces](https://codeforces.com)
 - [AtCoder](https://atcoder.jp)
-- [Coding Ninjas](https://codingninjas.com)
+- [CodeChef](https://www.codechef.com)
 
 📚 Topics Covered:  
 Arrays, Strings, Linked Lists, Trees, Graphs, Dynamic Programming, Greedy, Recursion, Sorting, Bit Manipulation, STL, and more...
@@ -27,28 +27,11 @@ Arrays, Strings, Linked Lists, Trees, Graphs, Dynamic Programming, Greedy, Recur
 ## 🗂️ Folder Structure
 
 
-> Each folder contains problems with well-commented solutions and problem statements (if needed).
-
+> Each folder contains problems with solutions.
+- Array
 ---
 
-## 🏆 Progress Tracker
-
-| Platform     | Solved | Difficulty |
-|--------------|--------|------------|
-| LeetCode     | 120+   | Easy–Hard  |
-| GFG          | 80+    | Medium     |
-| Codeforces   | 50+    | Div2/Div3  |
-
-Want to track my daily streak? Check out my [GitHub Contributions](#️-github-activity)!
-
----
-
-## 📌 Featured Snippets
-
-Here are some of the most optimized or interesting problems:
-- [🔁 Sliding Window Maximum (Deque)](./SlidingWindowMaximum.cpp)
-- [🔗 Detect Cycle in Directed Graph (BFS/DFS)](./Graph/CycleDetection.cpp)
-- [📦 0-1 Knapsack with Memoization](./DP/Knapsack.cpp)
+Want to track my daily streak? Check out my [LeetCode Profile](https://leetcode.com/u/pradoom777/)!
 
 ---
 
@@ -67,7 +50,6 @@ Here are some of the most optimized or interesting problems:
 - 📌 Consolidates your learning
 - 🚀 Helps in revision
 - 📚 Serves as a resource for others
-- 💼 Adds value to your GitHub profile
 
 ---
 
@@ -79,9 +61,8 @@ If you'd like to suggest problems or contribute solutions in different languages
 
 ## 📬 Contact Me
 
-- 🐦 [Twitter](https://twitter.com/)
-- 💼 [LinkedIn](https://www.linkedin.com/in/)
-- 💻 [Portfolio](https://your-portfolio.com)
+- 💼 [LinkedIn](https://www.linkedin.com/in/pradoom-varma/)
+//- 💻 [Portfolio](https://your-portfolio.com)
 
 ---
 
