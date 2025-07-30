@@ -2,7 +2,7 @@
 <h1 align="center">🚀 Pradoom's DSA Journey</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Language-C++%20%7C%20Python-blue?style=for-the-badge&logo=codewars" />
+  <img src="https://img.shields.io/badge/Language-C++-blue?style=for-the-badge&logo=cplusplus" />
   <img src="https://img.shields.io/badge/Goal-Crack%20the%20Coding%20Interview-brightgreen?style=for-the-badge" />
 </p>
 
