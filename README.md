@@ -29,6 +29,9 @@ Arrays, Strings, Linked Lists, Trees, Graphs, Dynamic Programming, Greedy, Recur
 
 > Each folder contains problems with solutions (currently).
 - Array
+- Binary Search
+- POTD
+- Segment Tree
 ---
 
 Want to track my daily streak? Check out my [LeetCode Profile](https://leetcode.com/u/pradoom777/)!
