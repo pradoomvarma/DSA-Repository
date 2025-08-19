@@ -1,10 +1,10 @@
 class Solution {
 public:
-
+    const double EPS = 1e-6;
 
     bool solve(vector<double>& nums) {
         if(nums.size() == 1) {
-            return fabs(nums[0] - 24.0) < 1e-6;
+            return abs(nums[0] - 24.0) <= EPS;
         }
 
         for(int i = 0; i < nums.size(); ++i) {
@@ -18,8 +18,8 @@ public:
 
                 double a = nums[i], b = nums[j];
                 vector<double> arr = {a + b, a - b, b - a, a * b};
-                if(fabs(a) > 1e-6) arr.push_back(a / b);
-                if(fabs(b) > 1e-6) arr.push_back(b / a);
+                if(abs(b) > 0.0) arr.push_back(a / b);
+                if(abs(a) > 0.0) arr.push_back(b / a);
 
                 for(auto &val : arr) {
                     next.push_back(val);
