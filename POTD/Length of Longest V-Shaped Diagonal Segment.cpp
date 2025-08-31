@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Solution 1
+
 class Solution {
 public:
     // Memo tables for each direction: topLeft, topRight, bottomLeft, bottomRight
@@ -116,6 +118,54 @@ public:
                         br = bottomRight(grid, i + 1, j + 1, 1, 0, 1);
 
                     ans = max(ans, 1 + max({tl, tr, bl, br}));
+                }
+            }
+        }
+
+        return ans;
+    }
+};
+
+
+// Solution 2
+class Solution {
+public:
+
+    vector<vector<int>> dir = {{1, 1}, {1, -1}, {-1, -1}, {-1, 1}};
+    int n, m;
+    int dp[501][501][4][2];
+
+    int solve(vector<vector<int>>& grid, int i, int j, int d, bool turn, int val) {
+        int i_ = i + dir[d][0];
+        int j_ = j + dir[d][1];
+
+        if(i_ < 0 || j_ < 0 || i_ >= n || j_ >= m || grid[i_][j_] != val) return 0;
+
+        if(dp[i][j][d][turn] != -1) return dp[i][j][d][turn];
+
+        int ans = 0;
+        int top = 1 + solve(grid, i_, j_, d, turn, val == 2 ? 0 : 2);
+        ans = max(ans, top);
+        if(turn == 0) {
+            int right = 1 + solve(grid, i_, j_, (d + 1) % 4, 1, val == 2 ? 0 : 2);
+            ans = max(ans, right);
+        }
+
+        return dp[i][j][d][turn] = ans;
+    }
+
+    int lenOfVDiagonal(vector<vector<int>>& grid) {
+        n = grid.size();
+        m = grid[0].size();
+        int ans = 0;
+        memset(dp, -1, sizeof(dp));
+
+        for(int i = 0; i < n; ++i) {
+            for(int j = 0; j < m; ++j) {
+                if(grid[i][j] == 1) {
+                    for(int d = 0; d < 4; ++d) {
+                        ans = max(ans, 1 + solve(grid, i, j, d, 0, 2));
+                    }
                 }
             }
         }
