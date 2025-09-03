@@ -13,24 +13,17 @@ public:
             int x1 = points[i][0];
             int y1 = points[i][1];
 
+            int maxY = INT_MIN;
             for(int j = i + 1; j < n; ++j) {
                 int x2 = points[j][0];
                 int y2 = points[j][1];
 
-                if(i == j || x1 > x2 || y1 < y2) continue;
+                if(y1 < y2) continue;
 
-                bool f = 1;
-                for(int k = i + 1; k < j; ++k) {
-                    if(k == i || k == j) continue;
-                    int x = points[k][0];
-                    int y = points[k][1];
-                    if((x1 <= x && x <= x2) && (y2 <= y && y <= y1)) {
-                        f = 0;
-                        break;
-                    }
+                if(y2 > maxY) {
+                    ans++;
+                    maxY = y2;
                 }
-                
-                if(f) ans++;
             }
         }
 
