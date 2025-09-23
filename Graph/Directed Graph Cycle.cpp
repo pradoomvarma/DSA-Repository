@@ -35,3 +35,36 @@ class Solution {
         return 0;
     }
 };
+
+// BFS Kahn's Algorithm Topological Sort
+class Solution {
+  public:
+    bool isCyclic(int V, vector<vector<int>> &edges) {
+        // code here
+        vector<vector<int>> adj(V);
+        vector<int> indegree(V, 0);
+        
+        for(auto &it : edges) {
+            adj[it[0]].push_back(it[1]);
+            indegree[it[1]]++;
+        }
+        
+        queue<int> q;
+        for(int i = 0; i < V; ++i) {
+            if(indegree[i] == 0) q.push(i);
+        }
+        
+        int cnt = 0;
+        while(!q.empty()) {
+            int node = q.front();   q.pop();
+            cnt++;
+            
+            for(auto &nbr : adj[node]) {
+                indegree[nbr]--;
+                if(indegree[nbr] == 0) q.push(nbr);
+            }
+        }
+        
+        return cnt != V;
+    }
+};
