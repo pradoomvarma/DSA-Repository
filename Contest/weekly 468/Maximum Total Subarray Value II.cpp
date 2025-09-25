@@ -60,8 +60,6 @@ public:
             ans += val;
             if(l == r) continue;
 
-            int mid = (l + r) / 2;
-
             // Shrink left
             if(l + 1 <= r && !vis.count({l + 1, r})) {
                 int valL = queryMax(0, 0, n - 1, l + 1, r) - queryMin(0, 0, n - 1, l + 1, r);
