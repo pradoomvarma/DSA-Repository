@@ -1,19 +1,10 @@
 class Solution {
 public:
-
-    typedef long long ll;
-    
     long long maxTotalValue(vector<int>& nums, int k) {
-        ll maxi = -1e9, mini = 1e9;
-        ll ans = 0;
+        long long ans;
+        int maxi = *max_element(begin(nums), end(nums));
+        int mini = *min_element(begin(nums), end(nums));
 
-        for(auto el : nums) {
-            if(el > maxi) maxi = el;
-            if(el < mini) mini = el;
-            ll curr = (maxi - mini) * k;
-            ans = max(ans, curr);
-        }
-
-        return ans;
+        return 1ll * (maxi - mini) * k;
     }
 };
