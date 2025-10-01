@@ -16,15 +16,13 @@ int main() {
         vector<int> freq(n + 2, 0);
         for (int x : a) freq[x]++;
 
-        int missingCount = 0;
+        int lessCount = 0;
         for (int i = 0; i < k; i++)
-            if (freq[i] == 0) missingCount++;
+            if (freq[i] == 0) lessCount++;
 
-        int countGreater = 0;
-        for (int i = k + 1; i <= n; i++)
-            countGreater += freq[i];
+        int equalCount = freq[k];
 
-        int ops = max(missingCount - countGreater, 0) + freq[k];
+        int ops = max(lessCount, equalCount);
         cout << ops << "\n";
     }
 }

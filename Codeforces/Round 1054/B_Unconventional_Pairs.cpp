@@ -30,7 +30,7 @@ int main()
 
         sort(a.begin(), a.end());
         
-        ll ans = INT_MIN;
+        ll ans = 0;
         for(int i = 0; i < n; i += 2) {
             ans = max(ans, abs(a[i] - a[i + 1]));
         }
