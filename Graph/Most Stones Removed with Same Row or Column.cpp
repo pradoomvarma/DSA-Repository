@@ -37,26 +37,30 @@ class DisjointSet {
 
 class Solution {
 public:
-    int makeConnected(int n, vector<vector<int>>& connections) {
-        DisjointSet ds(n);
+    int removeStones(vector<vector<int>>& stones) {
+        int m = -1, n = -1;
+        for(auto it : stones) {
+            n = max(n, it[0]);
+            m = max(m, it[1]);
+        }
 
-        int extraEdges = 0;
-        for(auto it : connections) {
-            int u = it[0];
-            int v = it[1];
+        DisjointSet ds(n + m + 2);
+        
+        unordered_map<int, int> stoneNodes;
+        for(auto it : stones) {
+            int row = it[0];
+            int col = it[1] + n + 1;
 
-            if(ds.findPar(u) != ds.findPar(v)) {
-                ds.Union(u, v);
-            }
-            else extraEdges++;
+            ds.Union(row, col);
+            stoneNodes[row] = 1;
+            stoneNodes[col] = 1;
         }
 
         int comp = 0;
-        for(int i = 0; i < n; ++i) {
-            if(ds.findPar(i) == i) comp++;
+        for(auto it : stoneNodes) {
+            if(ds.findPar(it.first) == it.first) comp++;
         }
-
-        if(extraEdges < comp - 1) return -1;
-        return comp - 1;
+        
+        return stones.size() - comp;
     }
 };
